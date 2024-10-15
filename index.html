@@ -199,29 +199,7 @@
 
         <p style="text-align: center;"><span class="section"><b>Abstract</b></span></p>
         <p style="text-align: justify; display: flex; justify-content: center; max-width: 800px; margin:auto"> 
-            Video editing presents a formidable challenge, requiring ma
-            nipulation of videos across spatial and temporal dimensions.
-             Current techniques primarily focus on altering the appear
-            ance or style of video objects while maintaining their under
-            lying structures. However, existing methods lack the capa
-            bility for users to interactively manipulate instances by drag
-            ging points from the initial frame to precisely align with target
-             points across subsequent frames.In this study, we introduce
-             a novel diffusion-based approach for interactive point-based
-             video manipulation. Our method empowers users to select
-             pairs of handle points, target points, and masks on the first
-             frame of a video input. These inputs are then transformed
-             into sets of points and propagated across frames. To ensure
-             precise modifications, we utilize video-level motion supervi
-            sion to update video features across multiple denoising stages.
-            Our approach is based on the key observation that consistency
-            in the edited video can be achieved by enforcing consistency
-            in the diffusion feature space. We accomplish this by explic
-           itly propagating diffusion features based on inter-frame corre
-           spondences available in the model. Consequently, our frame
-           work requires little computing resources compared to other
-            existing methods. We demonstrate state-of-the-art editing re
-           sults on a variety of both real-world and AI-generated videos
+Video editing presents a formidable challenge, requiring manipulation of videos across spatial and temporal dimensions. Current techniques primarily focus on altering the appearance or style of video objects while maintaining their underlying structures. However, existing methods lack the capability for users to interactively manipulate instances by dragging points from the initial frame to precisely align with target points across subsequent frames. In this study, we introduce a novel diffusion-based approach for interactive point-based video manipulation. Our method empowers users to select pairs of handle points, target points, and masks on the first frame of a video input. These inputs are then transformed into sets of points and propagated across frames. To ensure precise modifications, we utilize multi-stage, feature injection to update video features across multiple denoising processes. Our approach is based on the key observation that consistency in the edited video can be achieved by enforcing consistency in the diffusion feature space. We accomplish this by explicitly propagating diffusion features based on inter-frame correspondences available in the model. Consequently, our framework requires little computing resources compared to other existing methods. We demonstrate state-of-the-art editing results on a variety of both real-world and AI-generated videos.
         <p class="section">&nbsp;</p>
 
         <p class="section"><b>Method</b></p>
